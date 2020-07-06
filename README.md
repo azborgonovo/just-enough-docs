@@ -1,7 +1,7 @@
 # just-enough-docs
 Software teams often struggle with deciding what documentation is necessary for their own development lifecycle. Many software systems end up varying between no documentation at all or tons of paper which are useless and/or outdated.
 
-This page defines a minimum set of documents that should provide the necessary information for the stakeholders to enable them in understanding and taking correct decisions about the system.
+This page defines a minimum set of documents that should provide the necessary information for its stakeholders and to enable them on understanding and taking correct decisions about the system.
 
 This list was originally suggested by [@simonbrown](https://twitter.com/simonbrown), all credits to him. In order to record it for my own future projects as well as to serve as a point of research for the software community I decided to create this page.
 
