@@ -4,9 +4,17 @@ Software teams often struggle with deciding what documentation is necessary for 
 
 This page defines a minimum set of documents that should provide the necessary information for its stakeholders and to enable them on understanding and taking correct decisions about the system.
 
-A similar list was originally proposed in Tweeter by [@simonbrown](https://twitter.com/simonbrown), all credits to him. In order to record it for my own future projects as well as to serve as a point of research for the software community I decided to create this page.
+The list was inspired by a [tweet](https://twitter.com/simonbrown/status/1279013669783961600) from [@simonbrown](https://twitter.com/simonbrown). In order to record it for my own benefit and to serve as research material for the software community I decided to create this page.
 
-## Documents
+## Scope
+When talking about documentation it is important to keep in mind that each document is created with one or more target stakeholders. In the software context, I will abstractly define three types of stakeholders:
+1. Developers: who implement, maintain and evolve the system
+2. Users: who operate the system
+3. Other systems' developers: who integrate with the system via a provided interface
+
+This page limits its scope to stakeholders of type 1 and 3. Users require documents of a different nature, such as "User Manuals" and "Procedures", which are not included in this list.
+
+## Documents for Just-enough Documentation
 ### 1 - System Context diagram
 "A System Context diagram is a good starting point for diagramming and documenting a software system, allowing you to step back and see the big picture. Draw a diagram showing your system as a box in the centre, surrounded by its users and the other systems that it interacts with.
 
