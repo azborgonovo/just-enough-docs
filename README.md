@@ -57,9 +57,9 @@ Lightweight markdown files with a "Getting Started" or "How To" sections will co
 
 ## Important docs for .NET Class Libraries
 
-### 7 - XML comments of public types
+### 7 - XML comments of public types and members
 
-It is essential that developers have useful and immediate feedback when coding against an API. This is usually achieved with an IDE with  code completion capabilities. In Visual Studio this is named [IntelliSense](https://docs.microsoft.com/en-us/visualstudio/ide/using-intellisense).
+It is essential that developers have useful and immediate feedback when coding against an API. This is usually achieved with an IDE with code-completion capabilities. In Visual Studio that is called [IntelliSense](https://docs.microsoft.com/en-us/visualstudio/ide/using-intellisense).
 
 When providing .NET Class Libraries, do provide useful information of all your public types by exporting the [XML comments](https://docs.microsoft.com/en-us/dotnet/csharp/codedoc) to your consumers.
 
