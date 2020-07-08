@@ -1,9 +1,10 @@
+
 # just-enough-docs
 Software teams often struggle with deciding what documentation is necessary for their own development lifecycle. Many software systems end up varying between no documentation at all or tons of paper which are useless and/or outdated.
 
 This page defines a minimum set of documents that should provide the necessary information for its stakeholders and to enable them on understanding and taking correct decisions about the system.
 
-This list was originally suggested by [@simonbrown](https://twitter.com/simonbrown), all credits to him. In order to record it for my own future projects as well as to serve as a point of research for the software community I decided to create this page.
+A similar list was originally proposed in Tweeter by [@simonbrown](https://twitter.com/simonbrown), all credits to him. In order to record it for my own future projects as well as to serve as a point of research for the software community I decided to create this page.
 
 ## Documents
 ### 1 - System Context diagram
@@ -31,24 +32,39 @@ You may also want to include infrastructure nodes such as DNS services, load bal
 
 A collection of records for "architecturally significant" decisions like those that affect the system structure, non-functional characteristics, dependencies, interfaces, or construction techniques. (2)
 
-Keeping a record of such decisions is proven do be very helpful both to support on balancing the tradeoffs when making the decision as well as to clearly keep track of **why** certain decisions have been taken.
+As [evolutionary architecture](https://www.thoughtworks.com/radar/techniques/evolutionary-architecture) has been recommended as an alternative to traditional up-front, heavy-weight enterprise architectural designs, decisions have become more frequent in the lifecycle of a software system. Keeping record of such decisions is proven to be very helpful when the need of new changes emerge. To be able to clearly revisit the reasons (why) certain decisions have been made and what were the forces and alternatives considered previously may be a valuable input data to make a consistent and efficient new decision. 
 
-A template that is friendly and may be used is the following: 
+The following template provides a fluent way to write down ADRs:
 
-ADR 1: Deployment on Ruby on Rails 3.0.10
-TODO: ....
+> **ADR 1: *[decision title]***
+> In *[a system, context]* facing *[a requirement, situation, challenge]*
+> we decided *[decision]* and not *[alternatives]*
+> to achieve *[goal, benefits]* accepting *[constraints, drawbacks]*
 
 ### 5 - Lightweight Markdown docs
 
-(e.g. software guidebook, or arc42)
-## Additional docs for .NET Class Libraries
-### 6 - XML comments of public types
+Beyond the previous document, extra information may still be needed to guide the stakeholders in the software. Lightweight Markdown files can fulfill this need with documents close to the source code (and possibly versioned), searcheable, easily updatable and nicely formatted.
+
+There are references and templates that might inspire the fullfilment of this section (on-demand basis), such as the [Software Guidebook](https://softwarearchitecturefordevelopers.com/) or [arc42](https://arc42.org/overview/).
+
+## Important docs for API providers
+
+### 6 - Developer manual
+
+When providing an [interface](https://martinfowler.com/bliki/PublishedInterface.html) to other developers (Class Library, Web API, etc) it is fundamental that clients can easily understand and get acquainted with consuming the provided functionalities.
+
+Lightweight markdown files with a "Getting Started" or "How To" sections will come as a piece of cake and will increase the satisfaction of your fellow colleagues.
+
+## Important docs for .NET Class Libraries
+
+### 7 - XML comments of public types
 
 It is essential that developers have useful and immediate feedback when coding against an API. This is usually achieved with an IDE with  code completion capabilities. In Visual Studio this is named [IntelliSense](https://docs.microsoft.com/en-us/visualstudio/ide/using-intellisense).
 
-When providing .NET Class Libraries, do provide useful information of all your public types by exporting the [XML comments](https://docs.microsoft.com/en-us/dotnet/csharp/codedoc) to your consumers. 
+When providing .NET Class Libraries, do provide useful information of all your public types by exporting the [XML comments](https://docs.microsoft.com/en-us/dotnet/csharp/codedoc) to your consumers.
 
 ## References
-(1) Text and images by Simon Brown, licensed under [Creative Commons](https://creativecommons.org/licenses/by/4.0/). The System Context diagram and the Container diagram are part of the C4 Model Core diagrams. Access the [C4 Model website](https://c4model.com/#CoreDiagrams) for more information.
+
+(1) Quoted text and images by Simon Brown, licensed under [Creative Commons](https://creativecommons.org/licenses/by/4.0/). The System Context diagram and the Container diagram are part of the C4 Model Core diagrams. Access the [C4 Model website](https://c4model.com/#CoreDiagrams) for details.
 
 (2) More information on Documenting Architecture Decisions: [http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions](http://thinkrelevance.com/blog/2011/11/15/documenting-architecture-decisions)
