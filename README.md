@@ -36,9 +36,9 @@ As [evolutionary architecture](https://www.thoughtworks.com/radar/techniques/evo
 
 The following template provides a fluent way to write down ADRs:
 
-> **ADR 1: *[decision title]***
-> In *[a system, context]* facing *[a requirement, situation, challenge]*
-> we decided *[decision]* and not *[alternatives]*
+> **ADR 1: *[decision title]***   
+> In *[a system, context]* facing *[a requirement, situation, challenge]*   
+> we decided *[decision]* and not *[alternatives]*   
 > to achieve *[goal, benefits]* accepting *[constraints, drawbacks]*
 
 ### 5 - Lightweight Markdown docs
